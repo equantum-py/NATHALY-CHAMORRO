@@ -44,7 +44,7 @@ export default function Home() {
               <a className="btn btn-primary" href={waHref("Hola Nathaly, quisiera consultar sobre tus servicios.")}>Consultar por WhatsApp <span>↗</span></a>
               <a className="btn btn-secondary" href="#servicios">Conocer servicios</a>
             </div>
-            <div className="hero-facts"><span>Atención personalizada</span><span>Limpio, Paraguay</span><span>Atención a todo el país</span></div>
+            <div className="hero-facts"><span>Atención personalizada</span><span>Limpio · Todo Paraguay</span></div>
           </div>
           <div className="portrait-wrap portrait-full" aria-label="Fotografía profesional de Nathaly Chamorro">
             <div className="portrait-accent" aria-hidden="true"></div>
@@ -76,8 +76,7 @@ export default function Home() {
       <section className="trust-band">
         <div className="container-site trust-grid">
           <div><strong>Atención personalizada</strong><span>Un acompañamiento claro para cada caso.</span></div>
-          <div><strong>En Limpio</strong><span>Atención desde Avda. Rodríguez de Francia.</span></div>
-          <div><strong>Para tu negocio</strong><span>Emprendedores, profesionales y empresas.</span></div>
+          <div><strong>En Limpio y todo Paraguay</strong><span>Para emprendedores, profesionales y empresas.</span></div>
         </div>
       </section>
 
@@ -103,9 +102,9 @@ export default function Home() {
         <div className="container-site">
           <div className="section-head"><div><p className="eyebrow">CÓMO EMPEZAR</p><h2>Simple desde<br/><em>el primer contacto.</em></h2></div></div>
           <div className="process-grid">
-            <div><b>01</b><h3>Contame qué necesitás</h3><p>Escribime por WhatsApp y explicame brevemente tu situación.</p></div>
-            <div><b>02</b><h3>Revisamos tu caso</h3><p>Identificamos el servicio y la documentación necesaria para avanzar.</p></div>
-            <div><b>03</b><h3>Avanzamos con la gestión</h3><p>Coordinamos los siguientes pasos de acuerdo con el trámite o servicio.</p></div>
+            <div><b>01</b><h3>Contame qué necesitás</h3><p>Escribime por WhatsApp y contame tu caso.</p></div>
+            <div><b>02</b><h3>Revisamos tu caso</h3><p>Vemos qué necesitás para avanzar.</p></div>
+            <div><b>03</b><h3>Avanzamos</h3><p>Coordinamos la gestión.</p></div>
           </div>
         </div>
       </section>
@@ -118,7 +117,7 @@ export default function Home() {
       </section>
 
       <section id="preguntas" className="section faq">
-        <div className="container-site faq-grid"><div><p className="eyebrow">PREGUNTAS FRECUENTES</p><h2>Antes de<br/><em>empezar.</em></h2><p className="faq-intro">Algunas respuestas rápidas. Si tu caso es diferente, escribime y lo vemos.</p></div>
+        <div className="container-site faq-grid"><div><p className="eyebrow">PREGUNTAS FRECUENTES</p><h2>Antes de<br/><em>empezar.</em></h2><p className="faq-intro">Respuestas rápidas antes de empezar.</p></div>
           <div>{faqs.map(([q,a],i)=><details key={q}><summary><span>0{i+1}</span>{q}<b>+</b></summary><p>{a}</p></details>)}</div>
         </div>
       </section>
