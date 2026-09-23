@@ -12,9 +12,11 @@ const faqs = [
   ["¿Atienden clientes fuera de Limpio?", "La atención está enfocada en Limpio y también en clientes de otras zonas de Paraguay, según el servicio requerido."],
 ];
 
-const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
-const waHref = (message: string) =>
-  whatsapp ? `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}` : "#contacto";
+const whatsappUrl = "https://api.whatsapp.com/message/KLROPJQLPYEPD1?autoload=1&app_absent=0";
+const phone = "+595 992 741001";
+const address = "Avda. Rodríguez de Francia E/ Iturbe y Mayas, Limpio, Paraguay";
+const linktree = "https://linktr.ee/nathalychamorro_contabilidad";
+const waHref = (_message: string) => whatsappUrl;
 
 export default function Home() {
   return (
@@ -114,12 +116,12 @@ export default function Home() {
       </section>
 
       <section id="contacto" className="contact">
-        <div className="container-site contact-inner"><p className="eyebrow light">HABLEMOS</p><h2>Tu negocio merece<br/><em>estar en orden.</em></h2><p>Contame qué necesitás y vemos juntos cuál es el siguiente paso.</p><a className="btn btn-light" href={waHref("Hola Nathaly, quisiera realizar una consulta.")}>Consultar por WhatsApp ↗</a><small>Atención desde Limpio · Paraguay</small></div>
+        <div className="container-site contact-inner"><p className="eyebrow light">HABLEMOS</p><h2>Tu negocio merece<br/><em>estar en orden.</em></h2><p>Contame qué necesitás y vemos juntos cuál es el siguiente paso.</p><a className="btn btn-light" href={whatsappUrl} target="_blank" rel="noreferrer">Consultar por WhatsApp ↗</a><div className="contact-data"><a href="tel:+595992741001">{phone}</a><span>{address}</span><a href={linktree} target="_blank" rel="noreferrer">Redes y enlaces ↗</a></div></div>
       </section>
 
       <footer><div className="container-site footer-inner"><div className="brand footer-brand"><span className="brand-mark"><i></i><i></i><i></i><i></i></span><span><strong>NATHALY CHAMORRO</strong><small>CONTABILIDAD · IMPUESTOS · FINANZAS</small></span></div><p>© 2026 Nathaly Chamorro</p><a href="#">Volver arriba ↑</a></div></footer>
 
-      <a className="floating-wa" href={waHref("Hola Nathaly, quisiera realizar una consulta.")} aria-label="Consultar por WhatsApp">WA</a>
+      <a className="floating-wa" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Consultar por WhatsApp"><span className="wa-icon">☎</span><span className="wa-label">WhatsApp</span></a>
     </main>
   );
 }
