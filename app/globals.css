@@ -17,3 +17,11 @@ h1 em,h2 em,.about h2 em,.contact h2 em{font-style:normal;font-weight:700;color:
 .wa-svg{width:30px;height:30px;display:block;color:#fff;flex:0 0 30px}.floating-wa{background:#25D366;color:#fff}.floating-wa:hover{background:#1ebe5d;transform:translateY(-2px)}
 
 .portrait-photo{padding:0;background:transparent;overflow:hidden}.portrait-photo img{width:100%;height:100%;display:block;object-fit:cover;object-position:center top}
+
+/* Hero fotográfico: retrato protagonista, sin marco interior */
+.portrait-full{height:540px;background:linear-gradient(135deg,var(--lavender) 0%,#f5eff9 58%,var(--rose) 100%);overflow:hidden;isolation:isolate}
+.portrait-full .hero-person{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%;z-index:1}
+.portrait-accent{position:absolute;left:0;top:0;bottom:0;width:18px;background:var(--rose);z-index:2;opacity:.9}
+.portrait-full .portrait-note{z-index:3;right:22px;bottom:22px;width:auto;min-width:245px;padding:16px 20px;background:rgba(51,51,51,.92);backdrop-filter:blur(8px)}
+.portrait-full .portrait-note strong{font-size:13px}.portrait-full .portrait-note span{font-size:10px}
+@media(max-width:800px){.portrait-wrap.portrait-full{display:block;height:410px;margin-top:-20px}.hero-grid{gap:42px}.portrait-full .portrait-note{right:14px;bottom:14px;left:14px;min-width:0;width:auto}.portrait-full .hero-person{object-position:center 16%}}
