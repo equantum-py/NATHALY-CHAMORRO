@@ -121,7 +121,12 @@ export default function Home() {
 
       <footer><div className="container-site footer-inner"><div className="brand footer-brand"><span className="brand-mark"><i></i><i></i><i></i><i></i></span><span><strong>NATHALY CHAMORRO</strong><small>CONTABILIDAD · IMPUESTOS · FINANZAS</small></span></div><p>© 2026 Nathaly Chamorro</p><a href="#">Volver arriba ↑</a></div></footer>
 
-      <a className="floating-wa" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Consultar por WhatsApp"><span className="wa-icon">☎</span><span className="wa-label">WhatsApp</span></a>
+      <a className="floating-wa" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Consultar por WhatsApp">
+        <svg className="wa-svg" viewBox="0 0 32 32" aria-hidden="true">
+          <path fill="currentColor" d="M16.04 3C9.42 3 4.05 8.3 4.05 14.84c0 2.3.67 4.54 1.94 6.46L4 28.5l7.42-1.94a12.1 12.1 0 0 0 4.62.92h.01c6.61 0 11.99-5.3 11.99-11.84C28.04 9.3 22.66 3 16.04 3Zm0 22.48h-.01a10.1 10.1 0 0 1-4.14-.87l-.3-.13-4.4 1.15 1.18-4.24-.2-.31a9.78 9.78 0 0 1-1.56-5.24C6.61 10.4 10.84 6 16.05 6c5.2 0 9.43 4.4 9.43 9.84 0 5.43-4.23 9.64-9.44 9.64Zm5.17-7.25c-.28-.14-1.67-.81-1.93-.9-.26-.1-.45-.14-.64.14-.19.28-.73.9-.9 1.09-.16.19-.33.21-.61.07-.28-.14-1.19-.43-2.26-1.38a8.45 8.45 0 0 1-1.57-1.93c-.16-.28-.02-.43.12-.57.13-.12.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.5-.07-.14-.64-1.52-.88-2.08-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.35-.26.28-1 1-1 2.43 0 1.43 1.04 2.81 1.19 3 .14.19 2.05 3.09 4.96 4.33.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.67-.68 1.91-1.33.24-.66.24-1.22.17-1.34-.07-.12-.26-.19-.54-.33Z"/>
+        </svg>
+        <span className="wa-label">WhatsApp</span>
+      </a>
     </main>
   );
 }
