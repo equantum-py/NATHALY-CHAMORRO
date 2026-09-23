@@ -48,9 +48,8 @@ export default function Home() {
           </div>
           <div className="portrait-wrap" aria-label="Espacio preparado para fotografía profesional de Nathaly">
             <div className="ledger-lines"></div>
-            <div className="portrait-placeholder">
-              <div className="monogram">NC</div>
-              <p>Espacio para fotografía<br/>profesional de Nathaly</p>
+            <div className="portrait-placeholder portrait-photo">
+              <img src="/images/nathaly-chamorro.webp" alt="Nathaly Chamorro, contadora en Limpio, Paraguay" />
             </div>
             <div className="portrait-note"><strong>Nathaly Chamorro</strong><span>Contadora · Impuestos · Finanzas</span></div>
           </div>
