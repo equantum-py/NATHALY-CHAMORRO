@@ -30,7 +30,7 @@ export default function Home() {
           <nav className="desktop-nav" aria-label="Navegación principal">
             <a href="#servicios">Servicios</a><a href="#sobre-mi">Sobre Nathaly</a><a href="#preguntas">Preguntas</a>
           </nav>
-          <a className="btn btn-primary btn-small" href={waHref("Hola Nathaly, quisiera realizar una consulta.")}>Consultar</a>
+          <a className="btn btn-primary btn-small" href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp</a>
         </div>
       </header>
 
@@ -49,7 +49,6 @@ export default function Home() {
           <div className="portrait-wrap portrait-full" aria-label="Fotografía profesional de Nathaly Chamorro">
             <div className="portrait-accent" aria-hidden="true"></div>
             <img className="hero-person" src="/images/nathaly-chamorro.webp" alt="Nathaly Chamorro, contadora en Limpio, Paraguay" />
-            <div className="portrait-note"><strong>Nathaly Chamorro</strong><span>Contadora · Impuestos · Finanzas</span></div>
           </div>
         </div>
       </section>
@@ -74,20 +73,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section audience">
-        <div className="container-site audience-grid">
-          <div><p className="eyebrow">PARA QUIÉN</p><h2>Tu trabajo merece<br/><em>estar bien respaldado.</em></h2></div>
-          <div className="audience-cards">
-            <div><span>01</span><h3>Emprendedores</h3><p>Para quienes están empezando y necesitan hacer las cosas bien desde el inicio.</p></div>
-            <div><span>02</span><h3>Profesionales</h3><p>Para quienes necesitan orden y acompañamiento en sus obligaciones.</p></div>
-            <div><span>03</span><h3>Empresas</h3><p>Para equipos que necesitan apoyo tributario, laboral y administrativo.</p></div>
-          </div>
+      <section className="trust-band">
+        <div className="container-site trust-grid">
+          <div><strong>Atención personalizada</strong><span>Un acompañamiento claro para cada caso.</span></div>
+          <div><strong>En Limpio</strong><span>Atención desde Avda. Rodríguez de Francia.</span></div>
+          <div><strong>Para tu negocio</strong><span>Emprendedores, profesionales y empresas.</span></div>
         </div>
       </section>
 
       <section id="sobre-mi" className="section about">
         <div className="container-site about-grid">
-          <div className="about-visual"><div className="about-monogram">NC</div><span>CONTADORA · LIMPIO</span></div>
+          <div className="about-visual about-photo"><img src="/images/nathaly-chamorro.webp" alt="Nathaly Chamorro" /></div>
           <div className="about-copy"><p className="eyebrow light">SOBRE NATHALY</p><h2>Profesionalismo,<br/><em>con un trato cercano.</em></h2><p className="about-text">Soy Nathaly Chamorro, contadora. Acompaño a emprendedores, profesionales y empresas en sus gestiones tributarias, laborales y administrativas con una atención clara y personalizada.</p>
             <div className="values"><span>Claridad</span><span>Orden</span><span>Cercanía</span></div>
             <a className="text-link" href={waHref("Hola Nathaly, quisiera conversar sobre mi caso.")}>Conversemos sobre tu caso →</a>
@@ -106,6 +102,13 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="location-section">
+        <div className="container-site location-grid">
+          <div><p className="eyebrow">ESTUDIO EN LIMPIO</p><h2>Atención cercana,<br/><em>también en persona.</em></h2></div>
+          <div className="location-card"><span>Dirección</span><strong>{address}</strong><a href={whatsappUrl} target="_blank" rel="noreferrer">Coordinar por WhatsApp →</a></div>
+        </div>
+      </section>
+
       <section id="preguntas" className="section faq">
         <div className="container-site faq-grid"><div><p className="eyebrow">PREGUNTAS FRECUENTES</p><h2>Antes de<br/><em>empezar.</em></h2><p className="faq-intro">Algunas respuestas rápidas. Si tu caso es diferente, escribime y lo vemos.</p></div>
           <div>{faqs.map(([q,a],i)=><details key={q}><summary><span>0{i+1}</span>{q}<b>+</b></summary><p>{a}</p></details>)}</div>
@@ -116,7 +119,7 @@ export default function Home() {
         <div className="container-site contact-inner"><p className="eyebrow light">HABLEMOS</p><h2>Tu negocio merece<br/><em>estar en orden.</em></h2><p>Contame qué necesitás y vemos juntos cuál es el siguiente paso.</p><a className="btn btn-light" href={whatsappUrl} target="_blank" rel="noreferrer">Consultar por WhatsApp ↗</a><div className="contact-data"><a href="tel:+595992741001">{phone}</a><span>{address}</span><a href={linktree} target="_blank" rel="noreferrer">Redes y enlaces ↗</a></div></div>
       </section>
 
-      <footer><div className="container-site footer-inner"><div className="brand footer-brand"><span className="brand-mark"><i></i><i></i><i></i><i></i></span><span><strong>NATHALY CHAMORRO</strong><small>CONTABILIDAD · IMPUESTOS · FINANZAS</small></span></div><p>© 2026 Nathaly Chamorro</p><a href="#">Volver arriba ↑</a></div></footer>
+      <footer><div className="container-site footer-v3"><div className="brand footer-brand"><span className="brand-mark"><i></i><i></i><i></i><i></i></span><span><strong>NATHALY CHAMORRO</strong><small>CONTABILIDAD · IMPUESTOS · FINANZAS</small></span></div><div><strong>Contacto</strong><a href="tel:+595992741001">{phone}</a><span>{address}</span></div><div><strong>Enlaces</strong><a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp</a><a href={linktree} target="_blank" rel="noreferrer">Redes y enlaces</a></div><p>© 2026 Nathaly Chamorro</p></div></footer>
 
       <a className="floating-wa" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Consultar por WhatsApp">
         <svg className="wa-svg" viewBox="0 0 32 32" aria-hidden="true">
