@@ -82,3 +82,25 @@ footer{padding:48px 0}.footer-v3{display:grid;grid-template-columns:1.4fr 1.2fr 
 /* Sección educativa RUC con video real */
 .ruc-feature{background:var(--ink);color:#fff;padding:88px 0}.ruc-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:78px;align-items:center}.ruc-video{max-width:430px;margin:auto;width:100%;border-radius:18px;overflow:hidden;background:#171717;box-shadow:0 18px 55px rgba(0,0,0,.28)}.ruc-video video{display:block;width:100%;max-height:620px;aspect-ratio:9/16;object-fit:cover;background:#111}.ruc-copy .eyebrow{color:var(--rose);margin-bottom:18px}.ruc-copy h2{margin:0;font-size:clamp(42px,4.6vw,62px);line-height:1.02;letter-spacing:-.04em}.ruc-copy h2 em{font-style:normal;color:var(--pink)}.ruc-copy>p{max-width:590px;font-size:16px;line-height:1.75;color:#e2dee2;margin:22px 0 0}.ruc-cta{margin-top:30px}
 @media(max-width:800px){.ruc-feature{padding:64px 0}.ruc-grid{grid-template-columns:1fr;gap:34px}.ruc-video{max-width:100%;border-radius:14px}.ruc-video video{max-height:none;aspect-ratio:9/16}.ruc-copy h2{font-size:36px}.ruc-copy>p{font-size:14px;line-height:1.65;margin-top:17px}.ruc-cta{width:100%;margin-top:24px}}
+
+/* Mobile V5 — más comercial, menos scroll */
+@media(max-width:520px){
+  .header-inner{height:62px}.brand strong{font-size:10.5px}.btn-small{min-height:34px}
+  .hero-grid{padding-top:30px;padding-bottom:30px;gap:22px}.hero h1{font-size:40px}.lead{margin-top:16px;font-size:13px;line-height:1.5}.actions{margin-top:18px}.actions .btn{min-height:44px}
+  .hero-facts{margin-top:18px;grid-template-columns:1fr 1fr;gap:10px;font-size:8px}
+  .portrait-wrap.portrait-full{height:300px}.portrait-full .hero-person{object-position:center 15%}
+  .quick-grid span{padding:13px 6px;font-size:8px}
+  .section{padding:48px 0}.section-head{margin-bottom:22px}.section-head h2,.faq h2{font-size:32px}.section-head>p{display:none}
+  .service-list{gap:8px}.service-row{padding:16px 14px;grid-template-columns:24px 1fr 32px;gap:7px 9px}.service-row:hover{padding-left:14px}.service-row h3{font-size:17px}.service-area{font-size:7px}.service-items{gap:4px}.service-items span{font-size:8px;padding:4px 6px}.circle-link{width:30px;height:30px}
+  .trust-band{padding:10px 0}.trust-grid{grid-template-columns:1fr 1fr;gap:0}.trust-grid>div{padding:12px 12px;border-bottom:0;border-right:1px solid rgba(51,51,51,.12)}.trust-grid>div:last-child{border:0}.trust-grid strong{font-size:11px}.trust-grid span{font-size:9px;margin-top:4px}
+  .ruc-feature{padding:48px 0}.ruc-grid{grid-template-columns:.9fr 1.1fr;gap:18px;align-items:center}.ruc-video{border-radius:10px}.ruc-video video{aspect-ratio:9/16}.ruc-copy .eyebrow{font-size:7px;margin-bottom:8px}.ruc-copy h2{font-size:24px;line-height:1}.ruc-copy>p{font-size:10px;line-height:1.45;margin-top:10px}.ruc-copy>p:nth-of-type(1){display:none}.ruc-cta{width:100%;min-height:40px;margin-top:14px;padding:0 8px;font-size:9px}
+  .process{padding:48px 0}.process .section-head{margin-bottom:12px}.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.process-grid>div{padding:14px 8px 0;border-bottom:0;border-top:1px solid #ddd}.process-grid h3{font-size:14px;margin:10px 0 6px;line-height:1.15}.process-grid p{font-size:9px;line-height:1.45}.process-grid b{font-size:8px}
+  .location-section{padding:48px 0}.location-grid{grid-template-columns:.9fr 1.1fr;gap:16px}.location-grid h2{font-size:27px}.location-card{padding:17px 14px}.location-card span{font-size:7px}.location-card strong{font-size:11px;line-height:1.4;margin:7px 0 12px}.location-card a{font-size:9px}
+  .faq{padding:48px 0}.faq-grid{grid-template-columns:.72fr 1.28fr;gap:18px}.faq h2{font-size:28px}.faq-intro{font-size:9px;line-height:1.45}.faq summary{grid-template-columns:18px 1fr 12px;padding:13px 0;font-size:9px}.faq summary span{font-size:7px}.faq summary b{font-size:14px}.faq details p{padding:0 18px 12px;font-size:9px;line-height:1.45}
+  .contact{padding:48px 0}.contact h2{font-size:32px}.contact-inner>p:not(.eyebrow){margin:14px auto;font-size:10px}.contact .btn{min-height:42px}.contact-data{margin-top:16px;gap:7px;font-size:8px}
+  footer{padding:28px 0}.footer-v3{grid-template-columns:1fr 1fr;gap:14px;font-size:8px}.footer-v3>div{gap:4px!important}.footer-v3 p{grid-column:1/-1}.footer-brand{grid-column:1/-1}
+}
+@media(max-width:360px){
+  .hero h1{font-size:36px}.portrait-wrap.portrait-full{height:270px}
+  .ruc-copy h2{font-size:21px}.process-grid{gap:6px}.process-grid h3{font-size:12px}
+}
