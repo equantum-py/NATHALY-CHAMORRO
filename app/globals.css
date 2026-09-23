@@ -78,3 +78,7 @@ footer{padding:48px 0}.footer-v3{display:grid;grid-template-columns:1.4fr 1.2fr 
   .hero h1{font-size:39px}.portrait-wrap.portrait-full{height:390px}
   .about-photo{height:360px}.section-head h2,.about h2,.faq h2,.location-grid h2{font-size:33px}
 }
+
+/* Sección educativa RUC con video real */
+.ruc-feature{background:var(--ink);color:#fff;padding:88px 0}.ruc-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:78px;align-items:center}.ruc-video{max-width:430px;margin:auto;width:100%;border-radius:18px;overflow:hidden;background:#171717;box-shadow:0 18px 55px rgba(0,0,0,.28)}.ruc-video video{display:block;width:100%;max-height:620px;aspect-ratio:9/16;object-fit:cover;background:#111}.ruc-copy .eyebrow{color:var(--rose);margin-bottom:18px}.ruc-copy h2{margin:0;font-size:clamp(42px,4.6vw,62px);line-height:1.02;letter-spacing:-.04em}.ruc-copy h2 em{font-style:normal;color:var(--pink)}.ruc-copy>p{max-width:590px;font-size:16px;line-height:1.75;color:#e2dee2;margin:22px 0 0}.ruc-cta{margin-top:30px}
+@media(max-width:800px){.ruc-feature{padding:64px 0}.ruc-grid{grid-template-columns:1fr;gap:34px}.ruc-video{max-width:100%;border-radius:14px}.ruc-video video{max-height:none;aspect-ratio:9/16}.ruc-copy h2{font-size:36px}.ruc-copy>p{font-size:14px;line-height:1.65;margin-top:17px}.ruc-cta{width:100%;margin-top:24px}}
