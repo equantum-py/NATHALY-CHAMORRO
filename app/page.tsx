@@ -42,7 +42,7 @@ export default function Home() {
           </nav>
           <a
             href="#contacto"
-            className="rounded-full bg-[#ff69b4] px-5 py-3 text-sm font-bold text-white transition hover:opacity-90"
+            className="rounded-full bg-[#FF69B4] px-5 py-3 text-sm font-bold text-white transition hover:opacity-90"
           >
             Consultar
           </a>
@@ -52,12 +52,12 @@ export default function Home() {
       <section className="overflow-hidden bg-white">
         <div className="container-site grid min-h-[650px] items-center gap-12 py-16 lg:grid-cols-[1.05fr_.95fr]">
           <div>
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.16em] text-[#8a64b8]">
+            <p className="mb-5 text-sm font-bold uppercase tracking-[0.16em] text-[#B19CD9]">
               Estudio contable · Limpio, Paraguay
             </p>
             <h1 className="max-w-3xl text-5xl font-bold leading-[1.02] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
               Tu contadora, más cerca de{" "}
-              <span className="text-[#e94b9a]">tu negocio.</span>
+              <span className="text-[#FF69B4]">tu negocio.</span>
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-8 text-black/65">
               Servicios tributarios, laborales y administrativos para
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
 
           <div className="relative min-h-[430px]">
-            <div className="absolute inset-6 rounded-[44px] bg-gradient-to-br from-[#ffccdb] via-[#e6e6fa] to-white" />
+            <div className="absolute inset-6 rounded-[44px] bg-gradient-to-br from-[#FFCCCB] via-[#E6E6FA] to-white" />
             <div className="absolute bottom-0 left-0 rounded-3xl bg-white p-6 shadow-xl shadow-black/5">
               <p className="text-sm text-black/50">Atención personalizada</p>
               <p className="mt-1 text-xl font-bold">Limpio y todo Paraguay</p>
@@ -94,7 +94,7 @@ export default function Home() {
 
       <section id="servicios" className="py-24">
         <div className="container-site">
-          <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#8a64b8]">
+          <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#B19CD9]">
             Servicios
           </p>
           <div className="mt-4 flex flex-col justify-between gap-5 md:flex-row md:items-end">
@@ -111,7 +111,7 @@ export default function Home() {
                 key={service.title}
                 className="group rounded-3xl border border-black/8 bg-white p-7 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-black/5 sm:p-9"
               >
-                <span className="text-sm font-bold text-[#e94b9a]">
+                <span className="text-sm font-bold text-[#FF69B4]">
                   0{index + 1}
                 </span>
                 <h3 className="mt-8 text-2xl font-bold">{service.title}</h3>
@@ -125,10 +125,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="sobre-mi" className="bg-[#332d38] py-24 text-white">
+      <section id="sobre-mi" className="bg-[#333333] py-24 text-white">
         <div className="container-site grid gap-12 lg:grid-cols-2">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#ff9acb]">
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#FFCCCB]">
               Sobre Nathaly
             </p>
             <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em] sm:text-5xl">
@@ -150,7 +150,7 @@ export default function Home() {
       <section id="preguntas" className="bg-white py-24">
         <div className="container-site grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#8a64b8]">
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#B19CD9]">
               Preguntas frecuentes
             </p>
             <h2 className="mt-4 text-4xl font-bold tracking-[-0.035em]">
@@ -174,7 +174,7 @@ export default function Home() {
       </section>
 
       <section id="contacto" className="py-24">
-        <div className="container-site rounded-[36px] bg-[#ff69b4] px-7 py-14 text-center text-white sm:px-12 sm:py-20">
+        <div className="container-site rounded-[36px] bg-[#FF69B4] px-7 py-14 text-center text-white sm:px-12 sm:py-20">
           <p className="text-sm font-bold uppercase tracking-[0.16em]">
             Hablemos
           </p>
