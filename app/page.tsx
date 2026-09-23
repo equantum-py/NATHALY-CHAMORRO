@@ -46,11 +46,9 @@ export default function Home() {
             </div>
             <div className="hero-facts"><span>Atención personalizada</span><span>Limpio, Paraguay</span><span>Atención a todo el país</span></div>
           </div>
-          <div className="portrait-wrap" aria-label="Espacio preparado para fotografía profesional de Nathaly">
-            <div className="ledger-lines"></div>
-            <div className="portrait-placeholder portrait-photo">
-              <img src="/images/nathaly-chamorro.webp" alt="Nathaly Chamorro, contadora en Limpio, Paraguay" />
-            </div>
+          <div className="portrait-wrap portrait-full" aria-label="Fotografía profesional de Nathaly Chamorro">
+            <div className="portrait-accent" aria-hidden="true"></div>
+            <img className="hero-person" src="/images/nathaly-chamorro.webp" alt="Nathaly Chamorro, contadora en Limpio, Paraguay" />
             <div className="portrait-note"><strong>Nathaly Chamorro</strong><span>Contadora · Impuestos · Finanzas</span></div>
           </div>
         </div>
