@@ -81,12 +81,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="sobre-mi" className="section about">
-        <div className="container-site about-grid">
-          <div className="about-visual about-photo"><img src="/images/nathaly-chamorro.webp" alt="Nathaly Chamorro" /></div>
-          <div className="about-copy"><p className="eyebrow light">SOBRE NATHALY</p><h2>Profesionalismo,<br/><em>con un trato cercano.</em></h2><p className="about-text">Soy Nathaly Chamorro, contadora. Acompaño a emprendedores, profesionales y empresas en sus gestiones tributarias, laborales y administrativas con una atención clara y personalizada.</p>
-            <div className="values"><span>Claridad</span><span>Orden</span><span>Cercanía</span></div>
-            <a className="text-link" href={waHref("Hola Nathaly, quisiera conversar sobre mi caso.")}>Conversemos sobre tu caso →</a>
+      <section id="sobre-mi" className="section ruc-feature">
+        <div className="container-site ruc-grid">
+          <div className="ruc-video">
+            <video controls playsInline preload="metadata" aria-label="Video de Nathaly Chamorro sobre el RUC">
+              <source src="/videos/ruc-nathaly-chamorro.mp4" type="video/mp4" />
+              Tu navegador no puede reproducir este video.
+            </video>
+          </div>
+          <div className="ruc-copy">
+            <p className="eyebrow">RUC · MARANGATU</p>
+            <h2>¿Sos de este tipo<br/><em>de emprendedores?</em> 👀</h2>
+            <p>Contame, ¿actualmente ya contrataste a un profesional contable? ¿Los registros de comprobantes y tus declaraciones los realizás vos mismo/a?</p>
+            <p>Si tenés dudas sobre el estado de tu RUC, te ayudo verificando tu situación actual como contribuyente en tu sistema Marangatu.</p>
+            <a className="btn btn-primary ruc-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Quiero revisar mi RUC ↗</a>
           </div>
         </div>
       </section>
